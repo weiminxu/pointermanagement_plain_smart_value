@@ -1,0 +1,1 @@
+# pointermanagement_plain_smart_value
