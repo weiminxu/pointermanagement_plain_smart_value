@@ -17,4 +17,6 @@ public:
 	int get_ptr_val() const { return *ptr; }
 	void set_ptr_val(int val) const { *ptr = val; }
 
+
+
 };
