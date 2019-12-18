@@ -1,6 +1,7 @@
 #include <iostream>
 #include "plain_pointer.h"
 #include "value_ptr.h"
+#include "smart_pointer.h"
 
 using namespace std;
 
@@ -34,10 +35,26 @@ void test_valuepointer()
 	cout << ptr2.get_ptr_val() << ", " << ptr2.get_int() << endl;
 }
 
+void test_smartpointer()
+{
+	int obj = 0;
+
+	BHasPtr ptr1(&obj, 42);
+	BHasPtr ptr2(ptr1);
+	cout << ptr1.get_ptr_val() << ", " << ptr1.get_int() << endl;
+	cout << ptr2.get_ptr_val() << ", " << ptr2.get_int() << endl;
+	cout << "after changing: " << endl;
+	ptr2.set_ptr_val(2);
+	ptr2.set_int(22);
+	cout << ptr1.get_ptr_val() << ", " << ptr1.get_int() << endl;
+	cout << ptr2.get_ptr_val() << ", " << ptr2.get_int() << endl;
+}
+
 int main()
 {
 	//test_plainpointer();
-	test_valuepointer();
+	//test_valuepointer();
+	test_smartpointer();
 
 	return 0;
 }
