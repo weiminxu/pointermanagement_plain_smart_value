@@ -124,9 +124,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="plain_smart_value_pointer.cpp" />
+    <ClCompile Include="value_ptr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="plain_pointer.h" />
+    <ClInclude Include="value_ptr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

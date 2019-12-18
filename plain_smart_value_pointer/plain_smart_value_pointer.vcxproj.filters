@@ -18,9 +18,15 @@
     <ClCompile Include="plain_smart_value_pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="value_ptr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="plain_pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="value_ptr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
