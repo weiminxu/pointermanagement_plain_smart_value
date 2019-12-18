@@ -31,6 +31,7 @@ void test_valuepointer()
 	CHasPtr ptr1(obj, 42);
 	CHasPtr ptr2(ptr1);
 	cout << ptr1.get_ptr_val() << ", " << ptr1.get_int() << endl;
+	cout << ptr2.get_ptr_val() << ", " << ptr2.get_int() << endl;
 }
 
 int main()
